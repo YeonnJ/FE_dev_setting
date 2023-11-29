@@ -16,7 +16,7 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n\n// import { sum } from \"./math.js\";\n\nconsole.log(_math_js__WEBPACK_IMPORTED_MODULE_0__.sum(1, 2));\n\n\n//# sourceURL=webpack://fe_sample/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n\n// import { sum } from \"./math.js\";\n\nalert(_math_js__WEBPACK_IMPORTED_MODULE_0__.sum(1, 2));\n\n\n//# sourceURL=webpack://fe_sample/./src/app.js?");
 
 /***/ }),
 
