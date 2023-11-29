@@ -16,9 +16,20 @@ module.exports = {
     rules: [
       {
         //처리할 파일의 패턴을 정규표현식을 통해 명시 -> js파일만 해당
-        test: /\.js$/,
+        test: /\.css$/,
         //패턴에 해당하는 파일은 use에 명시한 함수가 실행되는 것
-        use: [path.resolve("./my-webpack-loader.js")],
+        //use 배열을 읽는 순서는 뒤(css-loader) -> 앞(style-loader)
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: "url-loader",
+        options: {
+          publicPath: "./dist/",
+          name: "[name].[ext]?[hash]",
+          //limit이하는 url-loader가 처리, 그 이상은 file-loader가 처리
+          limit: 20000,
+        },
       },
     ],
   },
