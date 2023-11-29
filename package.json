@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"build 실행합니다."
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
