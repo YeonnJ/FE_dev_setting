@@ -42,6 +42,11 @@ module.exports = {
           limit: 20000,
         },
       },
+      {
+        test: /\.js$/,
+        use: ["babel-loader"],
+        exclude: /node_modules/,
+      },
     ],
   },
   //플러그인은 plugins 배열
